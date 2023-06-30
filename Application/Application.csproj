@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Destinos\Created\" />
+    <Folder Include="Destinos\Delete\" />
+    <Folder Include="Destinos\GetAll\" />
+    <Folder Include="Destinos\GetById\" />
+    <Folder Include="Destinos\Update\" />
+    <Folder Include="Paquetes\Created\" />
+    <Folder Include="Paquetes\Delete\" />
+    <Folder Include="Paquetes\GetAll\" />
+    <Folder Include="Paquetes\GetById\" />
+    <Folder Include="Paquetes\Update\" />
+    <Folder Include="Reservacion\Delete\" />
+    <Folder Include="Reservacion\GetAll\" />
+    <Folder Include="Reservacion\GetById\" />
+    <Folder Include="Reservacion\Update\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>
